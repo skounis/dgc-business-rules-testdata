@@ -1,5 +1,11 @@
 name: Validation and Testing of Rule Sets
 on:
+  workflow_dispatch:
+    inputs:
+      country_code:
+        description: 'Country Code'
+        required: true
+        default: '*'
   push:
     branches:
       - main
